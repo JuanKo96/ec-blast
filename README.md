@@ -1,5 +1,4 @@
-# EC-BLAST: Hierarchical Enzyme Classification with Foundation Models
-
+# EC-BLAST: Improving Enzyme Commission Classification with BLAST-Guided Auxiliary Learning
 A framework for enzyme classification that leverages protein language models and BLAST search results as auxiliary labels.
 
 ## BLAST Process Overview
