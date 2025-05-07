@@ -2,7 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+outputs/
+wandb/
+sbatch_output/
+notebooks/
 # C extensions
 *.so
 

@@ -1,0 +1,21 @@
+model:
+  model_name: facebook/esm2_t6_8M_UR50D # "facebook/esm2_t6_8M_UR50D", "facebook/esm2_t12_35M_UR50D", "facebook/esm2_t30_150M_UR50D"
+  fine_tuning_mode: classification_only  # "classification_only" or "full"
+  layer_idx: -1
+  dropout_rate: 0.1
+  architecture: "original"  # "hierarchical" or "original"
+
+training:
+  batch_size: 64
+  num_epochs: 1
+  learning_rate: 5e-4
+  alpha: 0.7
+  val_split: 0.2
+  seed: 42
+  level_weights: [0.25, 0.25, 0.25, 0.25]  # [0.4, 0.3, 0.2, 0.1], Weights for EC hierarchy levels, must sum to 1
+
+wandb_project: "ec_classification"
+wandb_entity: null  
+wandb_mode: offline
+experiment_name: "enzyme-classifier-default"
+save_dir: "outputs"
