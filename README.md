@@ -67,10 +67,10 @@ datasets
 ## Usage
 ```bash
 # Run with default configuration
-python main.py
+python -m ec_blast.main
 
 # Run with custom configuration
-python main.py model.architecture=hierarchical training.level_weights=[0.5,0.3,0.1,0.1]
+python -m ec_blast.main model.architecture=hierarchical training.level_weights=[0.5,0.3,0.1,0.1]
 
 # Run for multiple parameters using sbatch
 sbatch run_all.sh

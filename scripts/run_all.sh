@@ -40,7 +40,7 @@ echo "  - model.fine_tuning_mode = $ft_mode"
 echo "  - model.model_name = $model"
 
 # Run the Python script with the selected parameters
-python3 main.py training.alpha=$alpha model.layer_idx=-1 model.fine_tuning_mode=$ft_mode \
+python3 -m ec_blast.main training.alpha=$alpha model.layer_idx=-1 model.fine_tuning_mode=$ft_mode \
     model.model_name=\"$model\" model.architecture=hierarchical training.batch_size=16 training.num_epochs=200
 
 wait

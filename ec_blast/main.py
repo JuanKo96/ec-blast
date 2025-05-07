@@ -19,7 +19,7 @@ import collections
 from datasets import load_dataset
 import pandas as pd
 from Bio.ExPASy import Enzyme
-from utils import (
+from ec_blast.utils import (
     train_hierarchical,
     evaluate_hierarchical,
     train_original,
@@ -27,7 +27,7 @@ from utils import (
     evaluate_test_f1_original,
     create_unique_filename,
 )
-from data import (
+from ec_blast.data import (
     UnifiedProteinDataset,
     TestProteinDataset,
     load_ec_dataset,
@@ -35,7 +35,7 @@ from data import (
     process_blast_results,
     add_auxiliary_labels,
 )
-from networks import TwoHeadFineTuner, HierarchicalFineTuner
+from ec_blast.networks import TwoHeadFineTuner, HierarchicalFineTuner
 
 
 # Config dataclasses for Hydra
